@@ -25,25 +25,27 @@
     <div class="getintouch">
         <div class="guide">
             <p>Let's Get in touch</p>
-            <p>or reach out manually to <span style="color: #4b3c3c;">bhatvsumukh@email.com</span></p>
+            <p>or reach out manually to <span style="color: #4b3c3c;" class="guide-mail">bhatvsumukh@email.com</span></p>
         </div>
         <div class="form">
+            <form action="https://formspree.io/f/meolwzwa"
+  method="POST">
             <section>
                 <label for="contactme" class="chead">Contact Me</label>
             </section><br>
             <section>
                 <label for="first-name" id="first-name" style="padding-top: 5px;">First Name</label><br>
-                <input type="text" placeholder="Enter your first name." class="input"><br>
+                <input type="text" placeholder="Enter your first name." class="input" name="first-name"><br>
 
                 <label for="last-name" id="last-name" style="padding-top: 2px;">Last Name</label><br>
-                <input type="text" placeholder="Enter your last name." class="input"><br>
+                <input type="text" placeholder="Enter your last name." class="input" name="last-name"><br>
 
                 <label for="email" id="email" style="padding-top: 2px;">Email</label><br>
-                <input type="email" placeholder="example@email.com" class="input"><br>
+                <input type="email" placeholder="example@email.com" class="input" name="email"><br>
             </section>
             <section class="question">
                 <label for="msg" id="msg" style="padding-top: 2px;">Enter your Messege</label><br>
-                <textarea name="placeholder" id="placeholder" class="input">Please enter your messeges or any questions.</textarea>
+                <textarea name="placeholder" id="placeholder" class="input" placeholder="Please enter your messeges or any questions."></textarea>
             </section>
            <form action="/submit-survey" method="post">
            <button type="submit">Submit</button>
