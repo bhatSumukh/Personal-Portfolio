@@ -355,7 +355,6 @@ body{
     .cdescrption{
         margin-right: 200px;
     }
-
 }
 
 
@@ -375,7 +374,12 @@ body{
     .cdescrption{
         margin-right: 180px;
     }
+}
 
+@media(min-width:780px){
+    .expt-mobile h3{
+        display: none;
+    }
 }
 
 
@@ -402,6 +406,15 @@ body{
 }
 }
 
+@media(min-width:780px) {
+    .skills-mobile{
+        display: none;
+    }
+    .column1,.column2{
+        display: none;
+    }
+}
+
 
 @media (max-width:780px){
     .expt{
@@ -410,9 +423,31 @@ body{
     .skills{
         display: none;
     }
+    .clglogo{
+        display: none;
+    }
     .column1, .column2{
         display: flex;
+        margin: 40px 10px 0 10px;
+        gap: 10px;
     }
+    .front-end,.version-control,.design-basics,.soft-skills{
+        width:250px;
+    }
+   .cdescrption{
+    margin-right: 10px;
+   }
+   .expt-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+   }
+   .expt-mobile h3{
+    background-color: #da841a;
+    color: #fff;
+    border:2px solid #fff;
+   }
 }
 
 /* Contact Me */
@@ -499,3 +534,75 @@ input::placeholder{
 label{
     margin-top: 8px;
 }
+
+
+@media (max-width:1050px) { 
+    .navbar{
+        margin-right: 0;
+    }
+    .getintouch{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .formK{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .guide{
+        padding-right: 0;
+    }
+ }
+
+
+ @media(max-width:950px) {
+    .form{
+        padding-left:10px;
+    }
+    .guide{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .next{
+        display: none;
+    }
+    .next-page a{
+        padding-right: 5%;
+    }
+ }
+
+
+ @media ( max-width:480px ) {
+    .getintouch{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        margin: 0;
+        padding:0 0 0 10px;
+    }
+   .guide{
+    font-size: medium;
+   }
+   .form{
+    margin-top: 30px;
+    padding-left: 10px;
+   }
+   .foot{
+    margin: 20px 0 0 0;
+   }
+   .guide-mail{
+    font-size: x-large;
+   }
+   .copyright{
+    font-size: small;
+    padding-right: 0px;
+   }
+   .next-page{
+    width: 80px;
+    font-size: small;
+    padding-left: 10px;
+   }
+   .next-page a{
+    padding-right: 0;
+   }
+ }
