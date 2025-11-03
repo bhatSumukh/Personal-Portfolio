@@ -787,6 +787,11 @@ label{
 }
 .acloneimg{
     width: 300px;
+     transition: transform 0.2s ease;
+     border-radius: 5%;
+}
+.acloneimg:hover{
+    transform: scale(1.05);
 }
 .card1 , .card2, .card3 {
     display: flex;
@@ -814,7 +819,12 @@ label{
     color: #fff;
 }
 .uimg{
-    height: 300px;
+    height: 270px;
+     transition: transform 0.2s ease;
+     border-radius: 5%;
+}
+.uimg:hover{
+    transform: scale(1.05); 
 }
 .phead{
     display: none;
