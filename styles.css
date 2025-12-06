@@ -441,6 +441,11 @@ form textarea:focus {
 
 
 @media (max-width: 480px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #head {
         width: 90%;
         height: 2.8rem;
