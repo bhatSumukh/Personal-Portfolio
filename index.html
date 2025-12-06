@@ -4,57 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
-    <header class="head">
-    <div class="navbar"> 
-        <div class="name">
-        <p class="name-me">Personal Portfolio</p>
+    <header>
+        <div id="head">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
-            <div class="pages">
-                <a href="index.html">Home</a>
-                <a href="Projects.html" class="Projects">My Projects</a>
-                <a href="education.html" class="education">Education</a>
-                <a href="contact.html" class="contact">Contact Me</a>
-            </div>
-    </div>
-    <div class="next"><a href="projects.html">Projects <i class="fa-solid fa-arrow-right" style="padding-right: 4px;"></i></a></div>
     </header>
-    <div class="hero">
-        <div class="me">
-            <p>Hi,I'am </p>
-            <p style="color: #FF2E2E; font-family: fantasy;">Sumukh Bhat</p>
-            <p style="font-size: x-large;">Front-End Developer</p>
+    <section id="home">
+        <div class="hero">
+            <div class="intro">
+                <div class="freelance">
+                    <a href="https://www.fiverr.com/bhat_sumukh_/buying?source=avatar_menu_profile">.Hire as Freelancer</a>
+                </div>
+               <div class="text">
+                 <h1>Hi, I'm Sumukh</h1>
+                <h3>Front-End Developer</h3>
+                <p>
+                    I belive coding is a magic, we the coders or the magician create a beautiful piece of art from nothing but a line of text out of nowhere so i belive it is an art and iam an 'Artist'.
+                </p>
+               </div>
+                <div class="position">
+                    <p>India,Udupi</p>
+                    <p>Available Now</p>
+                    <a href="assets/SUMUKH BHAT.pdf" download="sumukh-bhat-resume" class="resume-btn">Download CV</a>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/bhatSumukh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sumukh-bhat-81820a338/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/bhat_sumukh_" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://discord.com/channels/@me" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="assets/profile-pic-02 - Copy.jpg" alt="profilepic" id="profile-pic">
+            </div>
         </div>
-        <div class="profile-pic">
-            <img src="profile-pic-02.jpg" alt="profile-pic">
+    </section>
+    <section id="about">
+        <div class="about-container">
+        <div class="about-head">
+            <h3>About Me</h3>
+            <h2>Building Meaningful Website</h2>
         </div>
-        <div class="from">
-            <p style="font-size: large;">Expert in</p>
-            <p style="font-size: 40px;">Based in India</p>
-            <p style="font-size: 40px;">Iam a Front-End Developer and</p>
-            <p style="font-size: 40px; color: #FF2E2E; font-family: monospace;">UI/UX Designer</p>
+        <div class="about-text">
+            Hi, I’m Sumukh Bhat — BCA student and aspiring Full-Stack Web Developer passionate about building smart, scalable, and meaningful digital experiences.
+
+I create responsive and user-friendly websites using HTML, CSS, and JavaScript, and I’m currently expanding my skills into backend development, AI-driven features, and real-world project building.
+
+I’m deeply interested in how AI and robotics can enhance the modern web, and I continuously explore ways to integrate intelligent technologies into practical solutions.
+
+My current goal is to build a strong portfolio that reflects my growth from student to professional developer, showcasing my skills, creativity, and problem-solving mindset.
+
+Skills: Front-End Web Development | Problem Solving | UI/UX Design | HTML | CSS | JS
         </div>
+        <div class="about-cards">
+            <div class="card">
+                <h4>Education</h4>
+                <p>Poornaprajna College Autonomous,Udupi</p>
+                <p>BCA'25</p>
+            </div>
+            <div class="card">
+                <h4>Programming Language</h4>
+                <p>HTML | CSS | JS | C | Python</p>
+            </div>
+            <div class="card">
+                <h4>Certificate</h4>
+                <p><span style="font-weight: bold;">freeCodeCamp:</span> Responsive Web Design</p>
+            </div>
+            <div class="card">
+                <h4>Languages</h4>
+                <p>Kannada | English | Hindi | Japnese</p>
+            </div>
+            <div class="card">
+                <h4>Projects</h4>
+                <p>Built 4+ Projects</p>
+                <a href="https://github.com/bhatSumukh" target="_blank"><i class="fa-brands fa-github"></i>Git Hub</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="project-head">
+            <h2>Projects</h2>
+        </div>
+        <div class="project-cards">
+        <div class="project-card">
+            <div class="project-content">
+             <img src="assets/musicplayer.png" alt="musicplayer" id="project-img">
+            <h3>Music Player</h3>
+            <p>A JavaScript-powered music player featuring playlist management, custom controls, and a responsive UI optimized for web.</p>
+           <div class="plangs">
+                <div class="lang">HTML</div><div class="lang">CSS</div><div class="lang">JS</div>
+            </div>
+            <div class="links">
+                <a href="https://github.com/bhatSumukh/Music-Player.git"  target="_blank">Source Code</a>
+                <a href="https://musicplayer-mp.netlify.app/"  target="_blank">Live demo</a>
+            </div> 
+            </div>
+        </div>
+        <div class="project-card">
+           <div class="project-content">
+             <img src="assets/todoapp.png" alt="todoapp" id="project-img">
+            <h3>To-Do website</h3>
+            <p>A responsive task-management web app built to help users create, update, and track their to-dos with a clean UI and smooth functionality.</p>
+           <div class="plangs">
+                <div class="lang">HTML</div><div class="lang">CSS</div><div class="lang">JS</div>
+            </div>
+            <div class="links">
+                <a href="https://github.com/bhatSumukh/To-Do-Web-App.git"  target="_blank">Source Code</a>
+                <a href="https://to-do-wapp.netlify.app/"  target="_blank">Live demo</a>
+            </div>
+            </div>
+        </div>
+        <div class="project-card">
+             <div class="project-content">
+             <img src="assets/amazon.png" alt="amazonlogo" id="project-img">
+            <h3>Amazon Clone</h3>
+            <p>A static Amazon UI clone showcasing the homepage layout and design without functionality or mobile responsiveness.</p>
+            <div class="plangs">
+                <div class="lang">HTML</div><div class="lang">CSS</div>
+            </div>
+            <div class="links">
+                <a href="https://github.com/bhatSumukh/Amazon-clone.git"  target="_blank">Source Code</a>
+                <a href="https://aamazonclone1.netlify.app/"  target="_blank">Live demo</a>
+            </div>
+            </div>
+        </div>
+        <div class="project-card">
+           <div class="project-content">
+             <img src="assets/jsp.png" alt="jslogo" id="project-img">
+            <h3>JavaScript Practice</h3>
+            <p>Made a website containing all the JS question i have solved.</p>
+            <div class="plangs">
+                <div class="lang">HTML</div><div class="lang">CSS</div>
+            </div>
+            <div class="links">
+                <a href="https://github.com/bhatSumukh/JavaScript-Practice-Questions-SumukhBhat.git"  target="_blank">Source Code</a>
+                <a href="https://javasquestions.netlify.app/"  target="_blank">Live demo</a>
+            </div>
+            </div>
+        </div>
+        <div class="project-card">
+           <div class="project-content">
+             <img src="assets/weather.png" alt="weather" id="project-img">
+            <h3>Weather App</h3>
+            <p>A lightweight weather app that shows real-time temperature, humidity, wind speed, and icons using the OpenWeather API.</p>
+            <div class="plangs">
+                <div class="lang">HTML</div><div class="lang">CSS</div><div class="lang">JS</div>
+            </div>
+            <div class="links">
+                <a href="https://github.com/bhatSumukh/Weather-App.git"  target="_blank">Source Code</a>
+                <a href="https://weather-wap.netlify.app/" target="_blank">Live demo</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+   <section id="contact">
+    <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <form action="">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="full-name" id="full-name" placeholder="Enter your full name">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+
+            <label for="msg">Your Message</label>
+            <textarea name="msg" id="msg" placeholder="Write your message here..."></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
     </div>
-    <div class="connect">
-        <a href="https://www.instagram.com/sumukhbhat.dev/" target="_blank" id="instagram"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://www.facebook.com/share/1VjiTt1skL/" target="_blank"><i class="fa-brands fa-square-facebook" id="facebook"></i></a>
-        <a href="https://github.com/bhatSumukh" target="_blank" id="git"><i class="fa-brands fa-square-git"></i></a>
-        <a href="https://www.linkedin.com/in/sumukh-bhat-81820a338/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+</section>
+<footer id="footer">
+    <div class="footer-container">
+        <h3 class="footer-name">Sumukh Bhat</h3>
+
+        <p class="footer-email">
+            <a href="mailto:sumukhbhat.dev@gmail.com">sumukhbhat.dev@gmail.com</a>
+        </p>
+
+        <p class="footer-copy">
+            © 2025 Portfolio Website. Designed & Built by <span>Sumukh Bhat</span>.
+        </p>
     </div>
-    <div class="social">
-        <h2>DIGITAL FORUM</h2>
-    </div>
-    <footer class="foot">
-        <div class="copyright">
-            <p>© 2025 Sumukh Bhat. All Rights Reserved.</p>
-            <p>Email: sumukhbhat.dev@gmail.com</p>
-        </div>
-        <div class="next-page">
-            <a href="projects.html">Projects<i class="fa-solid fa-arrow-right" style="padding-left: 4px;"></i></a>
-        </div>
-    </footer>
+</footer>
 </body>
 </html>
