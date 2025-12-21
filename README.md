@@ -29,6 +29,7 @@
 
 ### 🌐 Connect With Me
 - 🔗 Portfolio: https://sumukhbhat-personalportfolio.netlify.app
-- 💼 LinkedIn: https://www.linkedin.com/in/sumukh-bhat
+- 💼 LinkedIn: https://www.linkedin.com/in/sumukh-bhat-
 - 📧 Email: sumbukhbhat.dev@gmail.com
+
 
