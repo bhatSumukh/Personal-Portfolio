@@ -15,7 +15,7 @@
 
 ### 🛠 Skills
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,git,github,figma" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,git,github" />
 </p>
 
 ---
@@ -28,6 +28,7 @@
 ---
 
 ### 🌐 Connect With Me
-- 🔗 Portfolio: https://sambhat-personalportfolio.netlify.app
-- 💼 LinkedIn: https://linkedin.com/in/your-link
+- 🔗 Portfolio: https://sumukhbhat-personalportfolio.netlify.app
+- 💼 LinkedIn: https://www.linkedin.com/in/sumukh-bhat
 - 📧 Email: sumbukhbhat.dev@gmail.com
+
