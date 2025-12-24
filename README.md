@@ -12,7 +12,6 @@ This is my personal portfolio website showcasing my skills, projects, and journe
 - Skills overview
 - Projects showcase
 - Contact section
-- Smooth navigation and animations
 
 ---
 
@@ -20,7 +19,6 @@ This is my personal portfolio website showcasing my skills, projects, and journe
 
 - HTML5 – Structure
 - CSS3 – Styling & responsiveness
-- JavaScript – Interactivity
 
 ---
 
@@ -38,11 +36,11 @@ This is my personal portfolio website showcasing my skills, projects, and journe
 
 Some of the projects featured in this portfolio include:
 
+- StudNet – Student Productivity Dashboard (ongoing)
 - Amazon UI Clone
 - To-Do List Application
 - Music Player
 - Weather App
-- StudNet – Student Productivity Dashboard (ongoing)
 
 Each project helped me strengthen my understanding of frontend development and problem-solving.
 
@@ -54,16 +52,6 @@ Each project helped me strengthen my understanding of frontend development and p
 - Improving frontend architecture
 - Learning React.js
 - Building scalable, real-world applications
-- Exploring AI integration in web projects
-
----
-
-## 🌱 Future Plans
-
-- Add backend functionality
-- Implement authentication and databases
-- Integrate a chatbot feature
-- Improve performance and accessibility
 
 ---
 
