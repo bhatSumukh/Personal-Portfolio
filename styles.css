@@ -10,6 +10,20 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  background: transparent;
 }
 
 /* Navbar */
@@ -32,6 +46,7 @@ header {
   border: 1px solid #252525;
   border-radius: 5rem;
   position: fixed;
+  z-index: 1000;
 }
 
 #head a {
@@ -54,7 +69,7 @@ header {
 /* Home */
 
 #home {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,7 +191,7 @@ header {
 }
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,11 +281,12 @@ header {
 .project-card {
   border: 2px solid #0d0d0d;
   border-radius: 16px;
-  background: #fff;
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
 }
 
 /* Content inside project card */
@@ -339,8 +355,8 @@ header {
   align-items: center;
   padding-left: 0;
   padding-right: 0;
-  background: #ffffff;
-  height: 100vh;
+  background: transparent;
+  min-height: 100vh;
 }
 
 .contact-container {
@@ -464,75 +480,98 @@ form textarea:focus {
     overflow-x: hidden;
   }
 
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 0;
+    margin: 0;
+  }
+
   header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   #head {
-    width: 70%;
+    width: 100%;
     max-width: 100%;
     height: 2.8rem;
     position: fixed;
     top: 1rem;
     font-size: 0.8rem;
-    gap: 0.5rem;
   }
   #head a {
-    width: auto;
-    padding: 0 0.6rem;
+    width: 100%;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 6rem;
   }
 
   .hero {
     flex-direction: column;
-    padding-top: 2rem;
-    text-align: center;
+    align-items: flex-start;
   }
 
   .freelance {
     display: flex;
     justify-content: center;
+    height: 30px;
   }
 
-  #profile-pic {
-    height: 300px;
-    width: 300px;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 1rem;
+  .freelance a {
+    height: 2rem;
   }
 
   .text {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
   }
 
   .text h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .position {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .position p {
+    height: 3rem;
+  }
+
+  .position a {
+    height: 3rem;
   }
 
   .social-media {
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-top: 5rem;
+  }
+
+  .social-media a {
+    font-size: 3rem;
   }
 
   #about {
     min-height: 100vh;
     height: auto;
-    padding: 2rem 0;
     text-align: center;
-  }
-
-  .about-container {
-    padding: 1rem 0;
   }
 
   .about-head h2 {
@@ -543,7 +582,6 @@ form textarea:focus {
   }
 
   .about-head {
-    padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -560,15 +598,9 @@ form textarea:focus {
     gap: 15px;
   }
 
-  .card {
-    height: 50px;
-    padding: 1rem 0;
-  }
-
   #projects {
     min-height: 100vh;
     height: auto;
-    padding: 4rem 0;
   }
 
   .project-head {
@@ -580,10 +612,11 @@ form textarea:focus {
   }
 
   .project-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
 
   .project-card {
@@ -597,8 +630,6 @@ form textarea:focus {
 
   .contact-container {
     width: 100%;
-    padding: 1.5rem 0;
-    margin: 1rem 0;
   }
 
   form input,
@@ -608,10 +639,6 @@ form textarea:focus {
 
   .submit-btn {
     font-size: 1rem;
-  }
-
-  #footer {
-    padding: 2rem 1rem;
   }
 
   .footer-name {
