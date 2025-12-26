@@ -67,14 +67,6 @@ header {
   padding: 5rem 12rem 5rem 12rem;
 }
 
-#profile-pic {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  border: 2px solid #cfcfcf;
-  object-fit: cover;
-}
-
 .freelance a {
   display: flex;
   justify-content: center;
@@ -104,6 +96,30 @@ header {
 
 .text p {
   padding-top: 1rem;
+  width: 400px;
+}
+
+#typing-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#typing-text::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 .position {
