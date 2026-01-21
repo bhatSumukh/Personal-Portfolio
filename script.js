@@ -1,4 +1,4 @@
-const texts = ["Front-End Developer", "UI/UX Designer", "Web Developer"];
+const texts = ["Front-End Developer", "UI/UX Designer", "Web Developer", "React Developer"];
 
 let textIndex = 0;
 let charIndex = 0;
@@ -10,7 +10,6 @@ function typeLoop() {
   const currentText = texts[textIndex];
 
   if (!isDeleting) {
-    // Typing
     typingText.textContent = currentText.slice(0, charIndex + 1);
     charIndex++;
 
@@ -20,7 +19,6 @@ function typeLoop() {
       }, 1200);
     }
   } else {
-    // Deleting
     typingText.textContent = currentText.slice(0, charIndex - 1);
     charIndex--;
 

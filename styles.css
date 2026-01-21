@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -470,6 +471,22 @@ form textarea:focus {
 
 .footer-copy span {
   font-weight: 600;
+}
+
+.more-projects{
+  border: 2px solid black;
+  border-radius: 16px;
+  height: 3rem;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.more-projects a{
+  color: black;
+  text-decoration: none;
 }
 
 @media (max-width: 480px) {
