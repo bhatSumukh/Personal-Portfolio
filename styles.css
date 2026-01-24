@@ -489,6 +489,14 @@ form textarea:focus {
   text-decoration: none;
 }
 
+
+.profile-pic img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: cover;
+}
 @media (max-width: 480px) {
   * {
     box-sizing: border-box;
