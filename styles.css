@@ -239,7 +239,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* transition: transform 0.3s ease; */
 }
+
+
 
 .card a {
   display: flex;
@@ -288,6 +291,12 @@ header {
   align-items: center;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(8px);
+  transition: transform 0.2s ease-in;
+}
+
+.project-card:hover{
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 /* Content inside project card */
@@ -426,19 +435,37 @@ form textarea:focus {
   cursor: pointer;
   margin-top: 0.5rem;
   transition: background 0.3s ease, transform 0.2s ease;
+  position: relative;
 }
 
-.submit-btn:hover {
-  background: #0d0d0d;
-  color: #fff;
-  transform: scale(1.03);
+.submit-btn::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  border-radius: 6px;
+  height: 100%;
+  background-color: #000;
+  color: white;
+  z-index: -1;
+}
+
+.submit-btn:hover::before {
+  width: 100%;
+  transition: 0.5s ease-in;
+}
+
+.submit-btn:hover{
+   position: relative;
+  z-index: 1;
+  color: white;
 }
 
 #footer {
   background: #0d0d0d;
   color: #fff;
-  padding: 2.5rem 1rem;
-  text-align: center;
+ 7-6   text-align: center;
 }
 
 .footer-container {
@@ -623,6 +650,26 @@ form textarea:focus {
     gap: 15px;
   }
 
+  .card{
+      animation: pop 0.5s ease-in;
+    animation-timeline: view();
+  }
+
+  @keyframes pop {
+    0%{
+      opacity: 0;
+      scale: 0.5;
+    }
+    50%{
+      opacity: 1;
+      scale: 1;
+    }
+    100%{
+      opacity: 1;
+      scale: 0.5;
+    }
+  }
+
   #projects {
     min-height: 100vh;
     height: auto;
@@ -647,7 +694,12 @@ form textarea:focus {
   .project-card {
     border: 2px solid #0d0d0d;
     border-radius: 16px;
+    transition: transform 0.5s ease;
   }
+
+ .project-card:hover{
+  transform: scale(1.2);
+}
 
   #project-img {
     height: 150px;

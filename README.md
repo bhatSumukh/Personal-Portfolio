@@ -1,10 +1,10 @@
-# 🌐 Personal Portfolio Website
+# Personal Portfolio Website
 
 This is my personal portfolio website showcasing my skills, projects, and journey as a BCA student and aspiring Full-Stack Web Developer. The portfolio is designed to be clean, responsive, and user-friendly, highlighting both technical ability and real-world project experience.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Responsive design for mobile, tablet, and desktop
 - Clean and modern UI
@@ -15,14 +15,14 @@ This is my personal portfolio website showcasing my skills, projects, and journe
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 - HTML5 – Structure
 - CSS3 – Styling & responsiveness
 
 ---
 
-## 📂 Sections Included
+## Sections Included
 
 - Home – Introduction and overview
 - About – Background and learning journey
@@ -32,7 +32,7 @@ This is my personal portfolio website showcasing my skills, projects, and journe
 
 ---
 
-## 📌 Projects Highlight
+## Projects Highlight
 
 Some of the projects featured in this portfolio include:
 
@@ -46,7 +46,7 @@ Each project helped me strengthen my understanding of frontend development and p
 
 ---
 
-## 🎯 Current Focus
+## Current Focus
 
 - Strengthening JavaScript fundamentals
 - Improving frontend architecture
@@ -55,6 +55,6 @@ Each project helped me strengthen my understanding of frontend development and p
 
 ---
 
-## ⭐ Acknowledgements
+## Acknowledgements
 
 Thanks for visiting my portfolio. Feedback and suggestions are always welcome.
