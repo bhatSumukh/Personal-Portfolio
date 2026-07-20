@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+@theme {
+  --font-heading: "Press Start 2P", cursive;
+  --font-body: "Space Mono", monospace;
+  --font-code: "JetBrains Mono", monospace;
+}
+
+
+:root {
+  --background: #0D0D0D;
+
+  --surface: #1A1A1A;
+
+  --primary: #FFDB00;
+
+  --text: #FFFFFF;
+
+  --muted: #7A7A7A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
